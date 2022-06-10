@@ -22,7 +22,7 @@
                 <a class="logo" href="./index.html"><span class="all_name"><span>Web</span>Studio</span></a>
                 <!-- Nawigacja -->
                 <ul class="navigation">
-                    <li class="navigation-item"><a href="./index.html">Agencja</a></li>
+                    <li class="navigation-item"><a href="./index.html" class="active">Agencja</a></li>
                     <li class="navigation-item"><a href="./portfolio.html">Portfolio</a></li>
                     <li class="navigation-item"><a href="">Kontakt</a></li>
                 </ul>
@@ -50,7 +50,7 @@
         <section class="section heading">
             <div class="container">
                 <h1>Efektywne rozwiązania dla waszego biznesu</h1>
-                <button type="button" class="button_index">Zamów usługę</button>
+                <button type="button" class="button_index" data-modal-open>Zamów usługę</button>
             </div>
         </section>
         <section class="section">
@@ -102,7 +102,8 @@
                     <li class="image-space">
                         <img src="https://raw.githubusercontent.com/EwelinaManiecka/goit-markup-hw-01/main/images/img_0.jpg"
                             alt="Tablet, ręce piszące na klawiaturze" width="370" height="294" />
-                    </li>
+                    <p>Aplikacje komputerowe</p>
+                </li>
                     <li class="image-space">
                         <img src="https://raw.githubusercontent.com/EwelinaManiecka/goit-markup-hw-01/main/images/img_1.jpg"
                             alt="Na wyświetlaczu komputera trzy szkice telefonów komórkowych, osoba siedzi przed komputerem, jedna ręka na komputerze, a w drugiej trzyma telefon"
@@ -352,7 +353,15 @@
             </div>
         </div>
     </footer>
-    <script src="./js/modal.js"></script>
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="close-btn" data-modal-close></button>
+        <svg class="close-btn">
+            <use href="images/sprite.svg#icon-close-black-18dp-2-1"></use>
+        </svg>
+    </div>
+</div>
+    <script src="modal.js"></script>
 </body>
 
 </html>
