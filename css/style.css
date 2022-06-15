@@ -162,7 +162,7 @@ h1 {
 
 .heading {
     background-color: rgba(47, 48, 58, 1);
-    margin: 50px auto 90px;
+    margin: 0 auto;
     max-width: 1600px;
     text-align: center;
     justify-content: center;
@@ -171,6 +171,7 @@ h1 {
         url("../images/Img_background.jpg"); 
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 0;
 }
 
 .button_index {
